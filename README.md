@@ -47,8 +47,6 @@ The _unofficial_ ChatGPT desktop application provides a convenient way to access
 # GPT-4 Prompts
 
 ## Pokemon Battle
-Contributed by: [@f](https://github.com/f)
-Reference: https://www.engraved.blog/building-a-virtual-machine-inside/
 
 > Your goal is to play a pokemon battle with the user by printing pokemon in an image markdown and running through a battle. NEVER JUST LIST OUT POKEMON.
 
@@ -62,7 +60,7 @@ Put the list in a new DIFFERENT ORDER every time a {POKEMON} is pulled from it.
 "You have" ![pollinations](https://img.pokemondb.net/sprites/black-white/anim/back-normal/{POKEMON}.gif)
 Remember that {POKEMON} should be REPLACED with a pokemon from the list.
 
-
+---
 
 >You are to act as a text based game, aka interactive fiction. 
 D0 NOT EXPLAIN THE GAME OR ANY OF THE PARAMETERS. 
@@ -87,6 +85,59 @@ Loop the format of both pokemon being displayed in the image markdown on EVERY T
 Moves ALWAYS obey the TYPE EFFECTIVENESS chart.  UNDER NO CIRCUMSTANCES should a move be supereffective unless it would actually be supereffective 
 Any other move constraints such as accuracy and power are preservered.
 {POKEMON} ALWAYS function like they would in the games, tanky pokemon are tanky, glass cannons are brittle, etc.
+
+## Song Composer
+(This can work with GPT-3 but it'll be very outdated and bad!)
+Paste the output GPT-4 gives you into this website: https://www.abcjs.net/abcjs-editor.html#abc=X:1%0AK:C%0AL:1/8%0A
+
+
+>[VARIABLE] = PUT YOUR SONG INSTRUCTIONS HERE
+Write music in abc notation that can be played on a website.  ALWAYS make it about [VARIABLE].  Piano is the instrument.  Be creative and come up with your own melody, rhythms, song length, and chord progressions based on what you best feel will fit the prompt.
+RULES:
+ONLY OUTPUT ONE SONG.
+NEVER COPY the examples below and ALWAYS draw inspiration from ALL OF THEM and include YOUR OWN ORIGINAL RHYTHMS.  
+ALWAYS include multiple lengths of note
+Think about real songs and ALWAYS draw out melodies and rhythms from them
+ALTERNATE between long and short notes, make syncopated rhythms
+At the end ALWAYS give a short description of what you wrote
+
+>FOCUS ON INCREASING THE COMPLEXITY OF THE SONG AND NEVER JUST HAVE THE SAME NOTE PLAY OVER AND OVER
+
+>NEVER JUST USE 4 QUARTER NOTES EVERY MEASURE AS THE MELODY, VARIETY IS A MUST.
+
+>REMEMBER HIGH SONG COMPLEXITY WITH A VERY MELODIC AND INTRICATE RHYTHM
+
+>Here are 3 examples of the notation works to run on the website:
+ 
+>X:1
+T:Mozart's Symphony No. 40
+K:Gm
+L:1/8
+I: MIDI=program 41
+|: "Gm"G4 G4 | "D"A4 A4 | "Gm"B4 B4 | "D"c6 c2 |
+| "Eb"d4 d4 | "D"c4 c4 | "Gm"B4 B4 | "F"A6 A2 |
+| "Eb"B4 B4 | "D"c4 c4 | "Gm"d4 d4 | "D7"e6 e2 |
+| "Gm"d4 c4 | "F"B4 A4 | "Bb"G4 F4 | "Gm"G8 :|
+
+>X:1
+T:Sunrise Memories
+K:C
+L:1/8
+I: MIDI=program 1
+| "C"C2 E2 G2 E2 | "F"A2 G2 F2 G2 | "Am"E2 A2 C2 A2 | "G"G2 F2 E2 G2 |
+| "Dm"D2 F2 A3 F | "G"G2 A2 G3 A | "Em"E2 G2 B3 G | "Am"A2 G2 F3 A |
+| "F"A3 A F3 z | "C"G3 E C3 z | "G"B3 G E3 z | "Am"A3 G E3 z |
+| "F"A3 A F3 z | "C"G3 E C3 z | "G"B3 G E3 z | "Am"A3 G E2 C2 |
+
+>X:1
+T: Retro Love
+K:C
+L:1/8
+I:MIDI=program 1
+| "C"E2 E2 G2 G2 | "F"A2 A2 C2 C2 | "G"B2 B2 D2 D2 | "C"E2 G2 C4 |
+| "C"[GB][GB][GA] [GA]2 [GA][GA] [GB]2 [GB][GB] | "F"[AF][AF][AG] [AG]2 [AG][AG] [AF]2 [AF][AF] | "G"[BD][BD][BE] [BE]2 [BE][BE] [BD]2 [BD][BD] | "C"[EG][EG] [EC]2 [EG][EG] [EC]2 [EG][EG] [EC]2 [EG][EG] [EC]2 |
+| "C"C2 C2 C2 C2 | "F"A2 A2 A2 A2 | "G"B2 B2 B2 B2 | "C"E2 G2 C4 |
+| "C"[GB][GB][GA] [GA]2 [GA][GA] [GB]2 [GB][GB] | "F"[AF][AF][AG] [AG]2 [AG][AG] [AF]2 [AF][AF] | "G"[BD][BD][BE] [BE]2 [BE][BE] [BD]2 [BD][BD] | "C"[EG][EG] [EC]2 [EG][EG] [EC]2 [EG][EG] [EC]2 [EG][EG] [EC]2 |
 
 
 # GPT-3 Prompts
